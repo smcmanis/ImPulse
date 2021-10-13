@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Rate Status</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="face-container">
+
+    <div class="face">
+      <div>
+        <div class="clock">05:30</div>
+        <div class="meter">
+          <span class="meterProgress"></span>
+        </div>
+      </div>
+
+      <!-- <div class="motivationMessage" style="visibility: hidden"> -->
+      <div class="motivationMessage">
+        Keep Moving!
+      </div>
+
+      <div>
+        <div class="flex label">
+          <div>
+            <span class="heartRateTarget">130</span> bpm
+          </div>
+          <div>
+            TARGET
+          </div>
+        </div>
+        <div class="flex label">
+          <div>
+            <!-- <span class="heart-ico fa fa-heart animated infinite pulse"></span> -->
+            <span class="heartRateCurrent">70</span> bpm
+          </div>
+          <div>
+            CURRENT
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <div>
+        <label for="moving">Moving?</label>
+        <input type="checkbox" name="moving" default-checked="false">
+      </div>
+      <div>
+        <label for="moving">Heart rate</label>
+        <input type="range" min="70" max="140" value="70">
+      </div>
+    </form>
+
+  </div>
+
+  <script src="https://use.fontawesome.com/6d71bb4b36.js"></script>
+  <script src="heartrate.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+body {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background-color: deepskyblue;
+  border: 1px white;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.face {
+  color: white;
+  background-color: black;
+  width: 130px;
+  padding: 5px 10px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.face-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clock {
+  font-size: 10px;
+  text-align: right;
+  padding-bottom: 2px;
+}
+
+.meter {
+  box-sizing: content-box;
+  height: 4px;
+  width: 130px;
+  position: relative;
+  margin: 2px 0 2px 0;
+  background: #555;
+  border-radius: 2px;
+  padding: 0px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meterProgress {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  background-color: rgb(43, 194, 83);
+  position: relative;
+  transition: width 0s linear;
+  overflow: hidden;
+}
+
+.countdownActive {
+  transition: width 13s linear;
+  width: 0%;
+}
+
+.motivationMessage {
+  text-align: center;
+  width: 100%;
+  visibility: hidden;
+}
+
+.heartRateCurrent {
+  font-size: 30px;
+}
+
+.heartRateTarget {
+  font-size: 30px;
+  color: lightblue;
+}
+
+.flex {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 1px white;
+}
+
+.stretch {
+  justify-content: stretch;
+  border: 1px white;
+}
